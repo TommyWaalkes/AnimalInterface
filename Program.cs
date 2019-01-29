@@ -7,7 +7,9 @@ namespace AnimalInterface
     {
         static void Main(string[] args)
         {
-            
+            Kola k = new Kola();
+            Console.WriteLine(k.GetFood());
+            Console.WriteLine(k.MakeSound());
 
             List<IAnimal> animals = new List<IAnimal>() { new Fox(),new Dog(), new Chimp() };
             Fox f = new Fox();
